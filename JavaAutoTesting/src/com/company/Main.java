@@ -29,8 +29,8 @@ public class Main {
         driver.get("https://vk.com/");
         driver.manage().window().setSize(new Dimension(1188, 640));
         driver.findElement(By.id("index_email")).click();
-        driver.findElement(By.id("index_email")).sendKeys("taro.vladimir@gmail.com");
-        driver.findElement(By.id("index_pass")).sendKeys("mem5xDFf");
+        driver.findElement(By.id("index_email")).sendKeys("username");
+        driver.findElement(By.id("index_pass")).sendKeys("password");
         driver.findElement(By.id("index_pass")).sendKeys(Keys.ENTER);
         {
             WebDriverWait wait = new WebDriverWait(driver, 30);
