@@ -40,7 +40,6 @@ public class Main {
         TakesScreenshot scrShot = ((TakesScreenshot) driver);
 
         driver.get("https://vk.com/");
-        driver.manage().window().setSize(new Dimension(1188, 640));
         driver.findElement(By.id("index_email")).click();
         driver.findElement(By.id("index_email")).sendKeys("Username");
         driver.findElement(By.id("index_pass")).sendKeys("Password");
